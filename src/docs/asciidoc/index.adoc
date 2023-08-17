@@ -1,0 +1,305 @@
+= Rest Docs Sample API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+
+ifndef::snippets[]
+:snippets: build/generated-snippets
+endif::[]
+
+[[introduction]]
+== 소개
+
+Spring Rest Docs API
+
+[[common]]
+== 공통 사항
+
+API에 관계없이 아래 사항을 지켜주셔야 합니다.
+
+=== Domain
+
+|===
+| 환경 | domain
+
+| 운영서버
+| `ec2-43-201-193-154.ap-northeast-2.compute.amazonaws.com`
+|===
+
+
+=== Header
+
+|===
+| name | 설명
+
+| `Authorization`
+| API를 사용하기 위한 인증 키 Bearer Token
+|===
+
+=== 공통 Response Body
+
+|===
+| field | 설명
+
+| `code`
+| 응답 코드
+
+| `message`
+| 예외사항 내용 등 응답 메세지
+
+| `data`
+| 실제 반환될 데이터
+|===
+
+
+= 계좌 생성 API
+
+== REQUEST
+
+include::{snippets}/open-account/http-request.adoc[]
+
+== REQUEST_BODY
+
+include::{snippets}/open-account/request-body.adoc[]
+
+== RESPONSE
+
+include::{snippets}/open-account/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/open-account/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/open-account/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/open-account/response-fields.adoc[]
+
+
+= 계좌 삭제 API
+
+== REQUEST
+
+include::{snippets}/delete-account/http-request.adoc[]
+
+== RESPONSE
+
+include::{snippets}/delete-account/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/delete-account/path-parameters.adoc[]
+
+
+= 계좌 상세 조회 API
+
+== REQUEST
+
+include::{snippets}/get-account-detail/http-request.adoc[]
+
+== RESPONSE
+
+include::{snippets}/get-account-detail/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/get-account-detail/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/get-account-detail/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/get-account-detail/response-fields.adoc[]
+
+
+= 계좌 목록 조회 API
+
+== REQUEST
+
+include::{snippets}/get-accounts/http-request.adoc[]
+
+== RESPONSE
+
+include::{snippets}/get-accounts/http-response.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/get-accounts/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/get-accounts/response-fields.adoc[]
+
+
+= 계좌 결제 API
+
+== REQUEST
+
+include::{snippets}/payment/http-request.adoc[]
+
+== REQUEST_BODY
+
+include::{snippets}/payment/request-body.adoc[]
+
+== REQUEST_FIELDS
+
+include::{snippets}/payment/request-fields.adoc[]
+
+== RESPONSE
+
+include::{snippets}/payment/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/payment/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/payment/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/payment/response-fields.adoc[]
+
+
+= 계좌 결제 예약 API
+
+== REQUEST
+
+include::{snippets}/reservation/http-request.adoc[]
+
+== REQUEST_BODY
+
+include::{snippets}/reservation/request-body.adoc[]
+
+== REQUEST_FIELDS
+
+include::{snippets}/reservation/request-fields.adoc[]
+
+== RESPONSE
+
+include::{snippets}/reservation/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/reservation/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/reservation/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/reservation/response-fields.adoc[]
+
+
+= 주식 목록 조회 API
+
+== REQUEST
+
+include::{snippets}/get-stock-List/http-request.adoc[]
+
+== RESPONSE
+
+include::{snippets}/get-stock-List/http-response.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/get-stock-List/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/get-stock-List/response-fields.adoc[]
+
+
+= 주식 상세 조회 API
+
+== REQUEST
+
+include::{snippets}/get-stock-detail/http-request.adoc[]
+
+== RESPONSE
+
+include::{snippets}/get-stock-detail/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/get-stock-detail/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/get-stock-detail/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/get-stock-detail/response-fields.adoc[]
+
+
+= 주식 구매 API
+
+== REQUEST
+
+include::{snippets}/stock-buying/http-request.adoc[]
+
+== REQUEST_BODY
+
+include::{snippets}/stock-buying/request-body.adoc[]
+
+== REQUEST_FIELDS
+
+include::{snippets}/stock-buying/request-fields.adoc[]
+
+== RESPONSE
+
+include::{snippets}/stock-buying/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/stock-buying/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/stock-buying/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/stock-buying/response-fields.adoc[]
+
+
+= 주식 판매 API
+
+== REQUEST
+
+include::{snippets}/stock-selling/http-request.adoc[]
+
+== REQUEST_BODY
+
+include::{snippets}/stock-selling/request-body.adoc[]
+
+== REQUEST_FIELDS
+
+include::{snippets}/stock-selling/request-fields.adoc[]
+
+== RESPONSE
+
+include::{snippets}/stock-selling/http-response.adoc[]
+
+== PATH-PARAMETERS
+
+include::{snippets}/stock-selling/path-parameters.adoc[]
+
+== RESPONSE_BODY
+
+include::{snippets}/stock-selling/response-body.adoc[]
+
+== RESPONSE_FIELDS
+
+include::{snippets}/stock-selling/response-fields.adoc[]
