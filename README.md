@@ -16,7 +16,4 @@
 ![img_2.png](img_2.png)
 
 ## ERD
-![img.png](img.png)
-
-## DB Schema
 ![img_1.png](img_1.png)
